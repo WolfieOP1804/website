@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup and Feedback</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-color: #ff7818;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .forms-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .signup-form, .feedback {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    align-items: left;
+  }
+  .signup-form h2, .feedback h2 {
+    margin-top: 0;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .input-group input, .input-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .image-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Contact US</h1>
+</div>
+<div class="image-container">
+    <img src="natural-food-collage-food-background-vegetable-and-meat-dishes-food-in-plates-menu-cover-free-space-for-text-2CAWKJX.jpg" alt="Image" align="center">
+  </div> <br>
+<div class="container">
+  <div class="forms-container">
+    <div class="signup-form">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="input-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="input-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+		<div class="input-group">
+			<label for="Message">Message</label>
+			<input type="text" id="Message" name="Message" required>
+		  </div>
+	</div>
+        <button class="button" type="submit">Signup</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
